@@ -15,7 +15,7 @@ class AgeBinner(BaseEstimator, TransformerMixin):
 class CountryGrouper(BaseEstimator, TransformerMixin):
     def __init__(self, threshold = 100):
         self.threshold = threshold
-        self.common_countries  = None
+        self.common_countries  = []]
 
     def fit(self, X, y = None):
         counts = X['native-country'].value_counts()
